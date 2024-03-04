@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PetController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,63 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
+})->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/newsworld', function () {
+    return view('newsworld');
+})->name('newsworld');
+
+Route::get('/sport', function () {
+    return view('sport');
+})->name('sport');
+
+
+Route::get('/music', function () {
+    return view('music');
+})->name('music');
+
+Route::get('/business', function () {
+    return view('business');
+})->name('business');
+
+Route::get('/health', function () {
+    return view('health');
+})->name('health');
+
+Route::get('/travel', function () {
+    return view('travel');
+})->name('travel');
+
+
+Route::get('/science', function () {
+    return view('science');
+})->name('science');
+
+Route::get('/my-profile', function () {
+    return view('my-profile');
+})->name('my-profile');
+
+Route::get('/search', function () {
+    return view('search');
+})->name('search');
+
+
+
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+require __DIR__.'/auth.php';

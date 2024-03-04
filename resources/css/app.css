@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2
+{
+    margin-left: 10%;
+}
+h3
+{
+    margin-left: 10%;
+}
+h4
+{
+    margin-left: 10%;
+}
+
+h6
+{
+    margin-left: 15%;
+}
+
+form
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.result img {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.content-center img {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.result img {
+    margin-bottom: 60px;
+    width: 65%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.result-search img {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.accent-blue-300
+{
+    color: darkcyan;
+}
+.war-in-gaza
+{
+    width: 55%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
