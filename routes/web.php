@@ -45,9 +45,12 @@ Route::get('/health', function () {
 })->name('health');
 
 Route::get('/travel', function () {
-    return view('travel');
+    return view('journey/travel');
 })->name('travel');
 
+Route::get('/travel2', function () {
+    return view('journey/travel2');
+})->name('travel2');
 
 Route::get('/science', function () {
     return view('science');

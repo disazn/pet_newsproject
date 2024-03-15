@@ -30,11 +30,13 @@
                 @endauth
 
                 @guest()
-            <a class="btn btn-sm btn-outline-secondary" href="{{route("login")}}">Войти</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="{{route("login")}}">Войти</a>
                 @endguest
 
 
             </div>
+
+
         </div>
     </header>
 
@@ -53,6 +55,7 @@
 
 
 
-
 </div>
+
+
 

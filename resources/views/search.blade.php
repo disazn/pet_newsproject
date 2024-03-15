@@ -6,8 +6,8 @@
 
 @section('content')
     <br>
-    <div class="columns-5 d-flex justify-content-end align-items-center">
-        <textarea id="search" style="width: 800px; height: 30px; margin-left: 600px  "
+    <div class="columns-5 d-flex justify-ent-end align-items-center">
+        <textarea id="search" style="width: 800px; height: 30px; margin-left: 600px"
                   placeholder="поиск..."></textarea>
         <a class="container" href="#" aria-label="Search">
 
@@ -25,5 +25,6 @@
     <br>
     <br>
     <h4>Вложить рекомендации и рекламы</h4>
+
 @endsection
 
