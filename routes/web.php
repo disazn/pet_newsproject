@@ -45,12 +45,16 @@ Route::get('/health', function () {
 })->name('health');
 
 Route::get('/travel', function () {
-    return view('journey/travel');
+    return view('travel');
 })->name('travel');
 
 Route::get('/travel2', function () {
     return view('journey/travel2');
 })->name('travel2');
+
+Route::get('/home2page', function () {
+    return view('homesecondpage');
+})->name('homesecondpage');
 
 Route::get('/science', function () {
     return view('science');
@@ -63,6 +67,18 @@ Route::get('/my-profile', function () {
 Route::get('/search', function () {
     return view('search');
 })->name('search');
+
+Route::get('/music2', function () {
+    return view('journey/music2');
+})->name('music2');
+
+Route::get('/health2', function () {
+    return view('journey/health2');
+})->name('health2');
+
+Route::get('/business2', function () {
+    return view('journey/business2');
+})->name('business2');
 
 
 

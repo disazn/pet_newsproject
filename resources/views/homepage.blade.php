@@ -50,8 +50,8 @@
     </div>
 
 </div>
+        <a href="{{ route('homesecondpage') }}"><button id="show-more-button">еще</button></a>
 
-        <button id="show-more-button">еще</button>
 
 
 

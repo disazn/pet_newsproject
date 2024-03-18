@@ -14,6 +14,7 @@
                 <a class="blog-header-logo text-body-emphasis text-decoration-none" href="{{route('home')}}">NewsBlog</a>
             </div>
 
+
             <div class="col-4 d-flex justify-content-end align-items-center">
                 <a class="btn btn-info" type="button" href="{{ route('about') }}">Про нас</a>
 
